@@ -1,0 +1,166 @@
+body{
+    background: url(res/bg_saita.jpg);
+    position:relative;
+}
+
+
+.osn-content {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+header{
+    color: white;
+    background-color: #44364485;
+    font-style: italic;
+    font-weight: 900;
+    opacity: 0.7;
+    font-size: 90px;
+    width: 1084px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+.dobro {
+  padding-top: 20px;
+  padding-left: 60px;
+  font-size: 40px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   font-size: 20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } 
+  .topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  .topmenu > li {
+    width: 25%;
+    position: relative;
+  }  
+  .topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+      font-weight: bold;
+      color: white;
+    padding-top: 15px;
+    padding-right: 20px; 
+  } 
+  .topmenu li a:hover {color: #296b68;}
+  .submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+  } 
+  .submenu {
+      position: absolute;
+      left: -190%;
+      top: 0%;
+      width: 180px;
+    opacity: 0;
+      transform: scaleY(0);
+      transform-origin :0 0;
+    transition: .5s ease-in-out;
+  }
+  .submenu a {
+    color: white;
+      text-align: left;
+      padding: 12px 10px;
+      font-size: 15px;
+  }
+  .submenu li:last-child a {border-bottom: none;}
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+      transform: scaleY(1);
+  }
+
+
+  .content{
+    background:url("res/7.jpg") no-repeat;
+    background-size: 1200px 1200px;
+    position: relative;
+    width: 1084px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 44%;
+  }
+  .privetstvie{
+      position: absolute;
+      overflow: auto;
+      margin-top: 5px;
+      width: 30%;
+      margin-left: 0;
+      margin-right: auto;
+      color: wheat;
+      font-size: 18px;
+      
+  }
+  .slovo-privetstvie {
+    text-align: center;
+    font-style: italic;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .avatar-privetstvie{
+    height: 400px;
+    margin-left: 30px;
+    margin-right: auto;
+    padding-bottom: 35px;
+  }
+  .lenta{
+    position: absolute;
+    overflow: auto;
+    height: 98%;
+    margin-top: 5px;
+    margin-left: 31%;
+    margin-right: auto;
+    color:black;
+  }
+
+
+
+  footer {
+    color: gainsboro;
+    text-align: right;
+    width: 1084px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-top: solid 3px #000000;
+    border-bottom: solid 3px #000000;
+  }
+  .Kolokimer {
+    text-decoration: underline;
+  }
