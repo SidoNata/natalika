@@ -1,6 +1,18 @@
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;
+}
+
+html{
+  -ms-overflow-style: none;  /* IE 10+ */
+  height: 100%;
+  overflow: hidden;
+}
+
 body{
-    background: url(res/bg_saita.jpg);
-    position:relative;
+  background: url(res/bg_saita.jpg);
+  position:relative;
+  height: 100%;
+  scrollbar-width: none; /* Firefox */
 }
 
 
@@ -13,22 +25,23 @@ body{
 
 
 header{
-    color: white;
-    background-color: #44364485;
-    font-style: italic;
-    font-weight: 900;
-    opacity: 0.7;
-    font-size: 90px;
-    width: 1084px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    position:relative;
+  color: white;
+  background-color: #44364485;
+  font-style: italic;
+  font-weight: 900;
+  opacity: 0.7;
+  font-size: 90px;
+  width: 1084px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  z-index: 1;
 }
 
 .dobro {
   padding-top: 20px;
-  padding-left: 60px;
+  padding-left: 35px;
   font-size: 40px;
 }
 
@@ -77,7 +90,7 @@ nav {
   } 
   .submenu {
       position: absolute;
-      left: -190%;
+      left: -215%;
       top: 0%;
       width: 180px;
     opacity: 0;
@@ -96,18 +109,43 @@ nav {
     opacity: 1;
       transform: scaleY(1);
   }
+  .submenu_down {
+      position: absolute;
+      left: -570%;
+      top: 130%;
+      width: 300px;
+      height: 850px;
+    opacity: 0;
+      transform: scaleY(0);
+      transform-origin :0 0;
+    transition: .5s ease-in-out;
+    overflow: auto;
+    overflow-x: hidden;
+}
+  .submenu_down a {
+    color: black;
+      text-align: left;
+      padding: 12px 10px;
+      font-size: 15px;
+}
+  .submenu_down li:last-child a {border-bottom: none;}
+  .topmenu > li:hover .submenu_down {
+    opacity: 1;
+      transform: scaleY(1);
+}
+  
 
 
   .content{
     background:url("res/7.jpg") no-repeat;
-    background-size: 1200px 1200px;
+    background-size: 1100px 1000px;
     position: relative;
     width: 1084px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    min-height: 100%;
-    padding-bottom: 44%;
+    min-height: 85%;
+    padding-bottom: 150px;
   }
   .privetstvie{
       position: absolute;
@@ -116,8 +154,9 @@ nav {
       width: 30%;
       margin-left: 0;
       margin-right: auto;
-      color: wheat;
+      color: floralwhite;
       font-size: 18px;
+      font-weight: 500;
       
   }
   .slovo-privetstvie {
@@ -125,7 +164,7 @@ nav {
     font-style: italic;
     line-height: 20px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -134,30 +173,50 @@ nav {
     height: 400px;
     margin-left: 30px;
     margin-right: auto;
-    padding-bottom: 35px;
   }
   .lenta{
     position: absolute;
     overflow: auto;
-    height: 98%;
+    overflow-x: hidden;
     margin-top: 5px;
     margin-left: 31%;
     margin-right: auto;
+    max-height: 99%;
     color:black;
   }
 
 
+  .stih {
+    white-space: pre-line;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
+  .stih h2 {
+    margin-left: 100px;
+  }
+
+  .stih pre {
+    margin-left: -150px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+  .stih div {
+    margin-left: 30%;
+  }
+
 
   footer {
+    background-color: #44364485;
     color: gainsboro;
     text-align: right;
-    width: 1084px;
+    width: 1078px;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     padding-right: 10px;
     padding-top: 5px;
-    padding-bottom: 2px;
     border-top: solid 3px #000000;
     border-bottom: solid 3px #000000;
   }
